@@ -1,0 +1,661 @@
+* {
+    margin:0;
+    padding:0;
+    font-family: 'Times New Roman', Times, serif;
+    scroll-behavior: smooth;
+}
+
+
+.hero {
+    width:100%;
+    height: 100vh;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url('background.jpg') no-repeat center/cover;
+    background-blend-mode: multiply;
+    background-size: cover;
+}
+
+.hero .navbar {
+    display: inline-flex;
+    border-bottom: solid 2px rgba(255, 255, 255,1);
+    width: 100%;
+    height: 60px;
+    background: linear-gradient(to right,#ff2d01,#b5dc00,#24f1e1);
+    z-index: 11;
+}
+
+.logo {
+    width:900px;
+    height:100%;
+}
+
+.navbar .logo {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.hero img {
+    margin-left:20px;
+    width: 50px;
+    height: 50px;
+}
+
+.element {
+    width: 800px;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.element a {
+    color: #000;
+}
+
+.element i {
+    cursor: pointer;
+}
+
+.hero h1 {
+    color: #fff;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 150px;
+    font-weight: 100;
+    position: relative;
+    top: 250px;
+    text-align: center;
+}
+
+.hero h3 {
+    color: #fff;
+    position: relative;
+    top: 320px;
+    text-align: center;
+}
+
+.hero p {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    position: relative;
+    top: 340px;
+    width: 900px;
+    left:400px;
+    text-align: center;
+}
+
+.favorites {
+    position: absolute;
+    left: 1125px;
+    margin-top: -500px;
+    width: 250px;
+    height: 300px;
+    background-color: #5d515173;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transition: 0.3s all linear ease-in-out;
+    box-shadow: 0 2px 5px rgba(11, 11, 11, 0.8);
+    z-index: 1;
+    flex-wrap: wrap;
+}
+
+.favorites i {
+    display: inline-block;
+    margin-top: -30px;
+    margin-left: 200px;
+    color: #000;
+}
+
+.favorites h2 {
+    color: #fff;
+    text-decoration: underline;
+    text-decoration-color: #ff2d01;
+}
+
+.favorites ul {
+    color: #fff;
+    text-decoration: underline;
+    text-decoration-color: #6bdc79;
+}
+
+.signin {
+    position: absolute;
+    left: 1400px;
+    margin-top: -300px;
+    width: 300px;
+    height: 200px;
+    background-color: #5d515173;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    transition: 0.3s all linear ease-in-out;
+    box-shadow: 0 2px 5px rgba(11, 11, 11, 0.8);
+    z-index: 1;
+    flex-wrap: wrap;
+}
+
+.signin #close {
+    display:inline-block;
+    margin-left: 245px;
+}
+
+.signin input {
+    gap: 5px;
+    width: 200px;
+}
+
+.signin button {
+    color: #fff;
+    background-color: #007BFF;
+    width: 100px;
+    height: 25px;
+    border-radius: 10%;
+    border: none;
+    font-weight: bold;
+}
+
+.signin button:hover {
+    cursor:pointer;
+    border: 1px #fff solid;
+}
+
+.library1 {
+    width:100%;
+    height:100vh;
+    background: linear-gradient(to right,#24f1e1,#ff2d01);
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.library2 {
+    width:100%;
+    height:100vh;
+    background: linear-gradient(to right,#ff2d01,#b5dc00);
+}
+
+.aboutus {
+    display:flex;
+    flex-direction: column;
+    width:100%;
+    height:100vh;
+    background: linear-gradient(to right,#c8d353,#000);
+}
+
+.aboutus h2 {
+    color:#fff;
+    font-size: 170px;
+    font-weight: 50px;
+    position: relative;
+    top: 300px;
+    left: 50px;
+}
+
+.aboutus p {
+    color:#fff;
+    position: relative;
+    top: 350px;
+    left: 50px;
+    width: 900px;
+}
+.aboutus .us {
+    padding-top: 50px;
+}
+
+.aboutus .ph {
+    position: absolute;
+    left: 1150px;
+    margin-top: 300px;
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url('about.jpg') no-repeat center/cover;
+}
+
+.contactus {
+    display:flex;
+    flex-direction: column;
+    width:100%;
+    height:700px;
+    background: linear-gradient(to bottom,#000,#5a5b56);
+}
+
+.contactus h2 {
+    color:#fff;
+    font-size: 50px;
+    font-weight: 50px;
+    position: relative;
+    left: 50px;
+    top: 80px;
+}
+
+.contactus p {
+    color:#fff;
+    position: relative;
+    left: 50px;
+    top: 100px;
+}
+
+.contactus .ct {
+    position: absolute;
+    left: 1150px;
+    margin-top: 100px;
+    border-radius: 50%;
+    width: 400px;
+    height: 400px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)), url('contact.jpg') no-repeat center/cover;
+}
+
+.endbar {
+    width:100%;
+    height:5px;
+    background: linear-gradient(to right,#ff2d01,#b5dc00,#24f1e1);
+}
+
+.library1 #a {
+    color:#fff;
+    font-size: 50px;
+    position: relative;
+    top: 30px;
+    left: 50px;
+}
+
+.heal {
+    margin-top: 100px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.heal #card {
+    width: 150px;
+    height: 250px;
+    background-color: #5d515173;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+}
+
+#card:hover {
+    transform: scale(1.1);
+    box-shadow: 0 2px 2px rgba(255, 255, 255, 0.8);
+}
+
+#card .dish {
+    width:150px;
+    height: 150px;
+    background-color: aliceblue;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.card1 .dish {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)), url('heal1.jpg') no-repeat center/cover;
+    background-blend-mode: multiply;
+    background-size: cover;
+}
+
+.card2 .dish {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)), url('heal2.jpg') no-repeat center/cover;
+    background-blend-mode: multiply;
+    background-size: cover;
+}
+
+.card3 .dish {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)), url('heal3.jpg') no-repeat center/cover;
+    background-blend-mode: multiply;
+    background-size: cover;
+}
+
+.card4 .dish {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)), url('heal4.jpg') no-repeat center/cover;
+    background-blend-mode: multiply;
+    background-size: cover;
+}
+
+.card5 .dish {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)), url('heal5.jpg') no-repeat center/cover;
+    background-blend-mode: multiply;
+    background-size: cover;
+}
+
+.card6 .dish {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)), url('heal6.jpg') no-repeat center/cover;
+    background-blend-mode: multiply;
+    background-size: cover;
+}
+
+#card h3 {
+    color: #fff;
+    text-align: center;
+}
+
+#card p {
+    color: #6bdc79;
+    text-align: center;
+}
+
+.library1 #b {
+    color:#fff;
+    font-size: 50px;
+    position: relative;
+    top: 100px;
+    left: 50px;
+}
+
+.fd {
+    margin-top: 180px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.fd #icard {
+    width: 150px;
+    height: 250px;
+    background-color: #5d515173;
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+}
+
+#icard:hover {
+    transform: scale(1.1);
+    box-shadow: 0 2px 2px rgba(255, 255, 255, 0.8) ;
+}
+
+#icard .idish {
+    width:150px;
+    height: 150px;
+    background-color: aliceblue;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.icard1 .idish {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)), url('i1.jpg') no-repeat center/cover;
+    background-blend-mode: multiply;
+    background-size: cover;
+}
+
+.icard2 .idish {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)), url('i2.jpg') no-repeat center/cover;
+    background-blend-mode: multiply;
+    background-size: cover;
+}
+
+.icard3 .idish {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)), url('i3.jpg') no-repeat center/cover;
+    background-blend-mode: multiply;
+    background-size: cover;
+}
+
+.icard4 .idish {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)), url('i4.jpg') no-repeat center/cover;
+    background-blend-mode: multiply;
+    background-size: cover;
+}
+
+.icard5 .idish {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)), url('i5.jpg') no-repeat center/cover;
+    background-blend-mode: multiply;
+    background-size: cover;
+}
+
+.icard6 .idish {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)), url('i6.jpg') no-repeat center/cover;
+    background-blend-mode: multiply;
+    background-size: cover;
+}
+
+#icard h3 {
+    color: #fff;
+    text-align: center;
+}
+
+#icard p {
+    color: #6bdc79;
+    text-align: center;
+}
+
+#card .function1 {
+    position: relative;
+    top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+#icard .function2 {
+    position: relative;
+    top: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.library2 {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.meal {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 200px;
+    padding-top: 50px;
+    
+}
+
+.meal #ecard {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.meal .ecard1 {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)), url('e1.jpg') no-repeat center/cover;
+    background-blend-mode: multiply;
+    background-size: cover;
+}
+
+.meal .ecard2 {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)), url('e2.jpg') no-repeat center/cover;
+    background-blend-mode: multiply;
+    background-size: cover;
+}
+
+.meal .ecard3 {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)), url('e3.jpg') no-repeat center/cover;
+    background-blend-mode: multiply;
+    background-size: cover;
+}
+
+.meal .ecard4 {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8)), url('e4.jpg') no-repeat center/cover;
+    background-blend-mode: multiply;
+    background-size: cover;
+}
+
+i {
+    color: #000;
+    cursor:pointer;
+}
+
+i:hover {
+    color: #fff;
+}
+
+#ecard:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#ecard h3 {
+    text-align: center;
+    margin-top: 100px;
+}
+
+.addcart {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom,#25c72b , #000);
+}
+
+.addcart h2 {
+    padding-top: 50px;
+    color: #fff;
+    font-size: 50px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contactus i {
+    color: #fff;
+    padding-top: 50px;
+}
+
+.contactus #para1 {
+    margin-top: 200px;
+}
+
+#para1, #para2:hover {
+    cursor: pointer;
+}
+
+.addcart #cartList {
+    font-size: 25px;
+    color: #fff;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap:20px;
+}
+
+.addcart .order {
+    position: sticky;
+    top: 900px;
+    background-color: #f51000d5;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.order button {
+    background-color: #0351bd;
+    border: none;
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: medium;
+    color: #fff;
+}
+
+.order button:hover {
+    background-color: #5a5b56;
+    cursor: pointer;
+}
+
+#cartList li {
+    text-align: center;
+    width: 500px;
+    height: 50px;
+    border: 1px solid #fff ;
+}
+
+#cartList li:hover {
+    background-color: #5d515142;
+    cursor: pointer;
+}
+
+.function3 p {
+    color: #25c72b;
+    font-size: 20px;
+}
+
+.bill h3 {
+    font-size: 30px;
+}
+.addcart .bill {
+    color: aliceblue;
+    padding-top: 50px;
+    padding-left: 50px;
+    text-align: left;
+}
+
+.locate {
+    position: relative;
+    left: 50px;
+    top: 50px;
+}
+
+.locate .travel {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    z-index: -1;
+}
+
+.locate h2 {
+    position: relative;
+    left: -650px;
+    top: 0px;
+    z-index: 11;
+    color: #fff;
+    font-size: 25px;
+}
+
+.locate .logi {
+    position: relative;
+    top: -265px;
+    left: 140px;
+    width: 40px;
+    height: 40px;
+}
+
+.locate p {
+    position: relative;
+    top: -147px;
+    left: 15px;
+    color: #000;
+    z-index: 111;
+}
